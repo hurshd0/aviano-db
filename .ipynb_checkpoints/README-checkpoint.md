@@ -1,12 +1,9 @@
-# Sample Online Car Rental System Database
-
-![aviano logo](images/logo/aviano-logo.png)
 I have created `aviano-db` which is used to understand principles of database design for beginners, and can also be used as toy database for front end projects. 
 
-# Sample Car Rental System Database ERD
+## Sample Car Rental System Database ERD
 ![car rental system erd](images/erd-design/aviano-erd.png)
 
-# Sample SQL Queries
+## Sample SQL Queries
 Following are sample `SQL` queries you can do on `aviano-db` to test.
 
 ### 1. Customer's Renal History
@@ -34,7 +31,7 @@ FROM
     location AS l2 ON r.drop_off_location_id = l2.id;
 ```
 `Output`:
-![](images/query_output/Result_8.png)
+![](images/query_output/Result_8.PNG)
 
 ### 2. Calculate Customer's Base Rent
 ```sql
@@ -54,7 +51,7 @@ WHERE
     r.vehicle_type_id = vt.id AND r.customer_id = c.id;
 ```
 `Output`:
-![](images/query_output/Result_9.png)
+![](images/query_output/Result_9.PNG)
 
 ### 3. Calculate Customer's Equipment Rental Cost
 ```sql
@@ -74,7 +71,7 @@ FROM
 GROUP BY r.id;
 ```
 `Output`:
-![](images/query_output/Result_11.png)
+![](images/query_output/Result_11.PNG)
 
 ### 4. Calculate Customer's Insurance Cost
 ```sql
@@ -94,7 +91,7 @@ FROM
 GROUP BY r.id;   
 ```
 `Output`:
-![](images/query_output/Result_10.png)
+![](images/query_output/Result_10.PNG)
 
 ### 5. Calculate Customer's Total Rental Cost
 ```sql
@@ -113,12 +110,12 @@ FROM
     customer AS c ON r.customer_id = c.id;
 ```
 `Output`:
-![](images/query_output/Result_12.png)
+![](images/query_output/Result_12.PNG)
 
-# DBMS used
+## DBMS used
 MySQL 5.5
 
-# USAGE
+## USAGE
 * Step 1. Clone/Download this repository
 * Step 2. [Install `MySQL Server` on Windows/Linux/macOS](https://dev.mysql.com/downloads/mysql/) and **NOTE:** Your `root` password.
 * Step 3. [Install `MySQL Workbench`](https://dev.mysql.com/downloads/workbench/)
@@ -127,6 +124,6 @@ MySQL 5.5
 
 Now you are free to play with `SELECT` queries. 
 
-# License
+## License
 Unless otherwise specified, the database and its code on this repository is licensed under GPLv3 license. See the `LICENSE` file for more details.
 
